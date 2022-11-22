@@ -2,4 +2,4 @@
 
 import game1 from '../src/even.js';
 
-console.log(game1());
+game1();

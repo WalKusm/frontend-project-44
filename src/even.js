@@ -24,12 +24,12 @@ const game1 = () => {
         return (`Correct! \nCongratulations, ${userName}!`);
       }
       if (count % 2 === 0 && answ !== yes) {
-        i = 0;
+        i = 3;
         count = (Math.random() * 100).toFixed(0);
-        return (`'${answ} is wrong answer ;(. Correct answer was '${yes}'. Let's try again, ${userName}!`);
+        return (`'${answ}' is wrong answer ;(. Correct answer was '${yes}'. Let's try again, ${userName}!`);
       }
       if (count % 2 !== 0 && answ !== no) {
-        i = 0;
+        i = 3;
         count = (Math.random() * 100).toFixed(0);
         return (`'${answ}' is wrong answer ;(. Correct answer was '${no}'. Let's try again, ${userName}!`);
       }
