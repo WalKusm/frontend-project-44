@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const game1 = () => {
+const even = () => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
@@ -37,4 +37,4 @@ const game1 = () => {
     console.log(yourAnswer());
   }
 };
-export default game1();
+export default even();
