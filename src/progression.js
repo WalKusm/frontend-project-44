@@ -22,7 +22,7 @@ const game4 = () => {
     const randNum = Math.abs((Math.random() * 10).toFixed(0));
     result = array[randNum];
     array[randNum] = '..';
-    console.log(`Question: ${array}`);
+    console.log(`Question: ${array.join(' ')}`);
     const answ = readlineSync.question('Your answer: ');
 
     if (Number(answ) === result && i === 2) {
