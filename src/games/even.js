@@ -1,15 +1,20 @@
 import startGame from '../index.js';
 import { getRandomTwodigitCount } from '../random-count.js';
 
-const getQuestionAndAnswer = () => {
-  const question = getRandomTwodigitCount();
-  let answer = 0;
+const checkForEvenness = (question) => {
+  let answ = 0;
   if (question % 2 === 0) {
-    answer = 'yes';
+    answ = 'yes';
   }
   if (question % 2 !== 0) {
-    answer = 'no';
+    answ = 'no';
   }
+  return answ;
+};
+
+const getQuestionAndAnswer = () => {
+  const question = getRandomTwodigitCount();
+  const answer = checkForEvenness(question);
   return [question, answer];
 };
 

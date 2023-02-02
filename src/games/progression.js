@@ -1,24 +1,27 @@
 import startGame from '../index.js';
 import { getRandomTwodigitCount, getRandomCount } from '../random-count.js';
 
-const getQuestionAndAnswer = () => {
-  const stepOfProgression = Math.abs(getRandomCount());
-  const startCount = Math.abs(getRandomTwodigitCount());
+const generateProgression = (startCount, stepOfProgression) => {
   const questArray = [];
   questArray[0] = startCount;
-  let answ = 0;
-
   let j = 1;
   while (j < 10) {
     questArray[j] = questArray[j - 1] + stepOfProgression;
     j += 1;
   }
+  return questArray;
+};
 
+const getQuestionAndAnswer = () => {
+  const stepOfProgression = Math.abs(getRandomCount());
+  const startCount = Math.abs(getRandomTwodigitCount());
+  let answ = 0;
+  const progression = generateProgression(startCount, stepOfProgression);
   const randNum = Math.abs(getRandomCount() - 1);
-  answ = questArray[randNum];
-  questArray[randNum] = '..';
+  answ = progression[randNum];
+  progression[randNum] = '..';
 
-  const question = questArray.join(' ');
+  const question = progression.join(' ');
   const answer = String(answ);
 
   return [question, answer];
