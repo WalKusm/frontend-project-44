@@ -1,3 +1,4 @@
+### Codeclimate maintainability badge:
 <a href="https://codeclimate.com/github/WalKusm/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/bd7c49d147912c5fce07/maintainability" /></a>
 
 ### Hexlet tests and linter status:
@@ -24,8 +25,8 @@
 Запуск: $ brain-prime
 
 ### asciinema:
-brain-even:   https://asciinema.org/a/TKLsQe12EkYE8kHnFjmzrvk1r
-brain-calc: https://asciinema.org/a/ruXnKAUFztDz3krykfzEmmzRG
-brain-gcd: https://asciinema.org/a/RO1XpoHOk9D8Rw8qAafzPGq2K 
-brain-progression: https://asciinema.org/a/PXyv9FNX5empSbaGNHUDTVJr4
-brain-prime:  https://asciinema.org/a/OtCmPo6LvguTE7FpXFfUiFlnV 
+* brain-even:   https://asciinema.org/a/TKLsQe12EkYE8kHnFjmzrvk1r
+* brain-calc: https://asciinema.org/a/ruXnKAUFztDz3krykfzEmmzRG
+* brain-gcd: https://asciinema.org/a/RO1XpoHOk9D8Rw8qAafzPGq2K 
+* brain-progression: https://asciinema.org/a/PXyv9FNX5empSbaGNHUDTVJr4
+* brain-prime:  https://asciinema.org/a/OtCmPo6LvguTE7FpXFfUiFlnV 
