@@ -24,4 +24,4 @@ const description = 'What is the result of the expression?';
 
 const calc = () => startGame(getQuestionAndAnswer, description);
 
-export default calc();
+export default calc;

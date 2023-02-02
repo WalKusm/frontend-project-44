@@ -21,4 +21,4 @@ const description = 'Find the greatest common divisor of given numbers.';
 
 const gcd = () => startGame(getQuestionAndAnswer, description);
 
-export default gcd();
+export default gcd;
