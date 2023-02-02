@@ -1,7 +1,8 @@
 import startGame from '../index.js';
+import { getRandomTwodigitCount } from '../random-count.js';
 
 const getQuestionAndAnswer = () => {
-  const question = Math.abs((Math.random() * 100).toFixed(0));
+  const question = Math.abs(getRandomTwodigitCount());
   let answer = 0;
   let j = 0;
   let counter = 0;

@@ -1,8 +1,9 @@
 import startGame from '../index.js';
+import { getRandomTwodigitCount, getRandomCount } from '../random-count.js';
 
 const getQuestionAndAnswer = () => {
-  const stepOfProgression = Math.abs((Math.random() * 10).toFixed(0));
-  const startCount = Math.abs((Math.random() * 100).toFixed(0));
+  const stepOfProgression = Math.abs(getRandomCount());
+  const startCount = Math.abs(getRandomTwodigitCount());
   const questArray = [];
   questArray[0] = startCount;
   let answ = 0;
@@ -13,7 +14,7 @@ const getQuestionAndAnswer = () => {
     j += 1;
   }
 
-  const randNum = Math.abs((Math.random() * 10).toFixed(0) - 1);
+  const randNum = Math.abs(getRandomCount() - 1);
   answ = questArray[randNum];
   questArray[randNum] = '..';
 

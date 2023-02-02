@@ -1,7 +1,8 @@
 import startGame from '../index.js';
+import { getRandomTwodigitCount } from '../random-count.js';
 
 const getQuestionAndAnswer = () => {
-  const question = (Math.random() * 100).toFixed(0);
+  const question = getRandomTwodigitCount();
   let answer = 0;
   if (question % 2 === 0) {
     answer = 'yes';
