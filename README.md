@@ -1,3 +1,5 @@
+codeclimate badge: <a href="https://codeclimate.com/github/WalKusm/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/bd7c49d147912c5fce07/maintainability" /></a>
+
 «Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново.
 
 Установка: $ npm link
@@ -18,5 +20,3 @@ https://asciinema.org/a/dTyFKZzuQO14nuBZqaecO6u86 (asciinema brain-calc)
 https://asciinema.org/a/67sBca3qU4bG1pu0sq6oZ2gmF (asciinema brain-cgd)
 https://asciinema.org/a/Ugbx6jljwyv6D2LWxRy0BaiBI (asciinema brain-progression)
 https://asciinema.org/a/QQsbi9dHpUDH1B9AbHrlfk96J (asciinema brain-prime)
-
-codeclimate badge: <a href="https://codeclimate.com/github/WalKusm/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/bd7c49d147912c5fce07/maintainability" /></a>

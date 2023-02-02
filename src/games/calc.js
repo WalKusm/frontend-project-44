@@ -22,6 +22,6 @@ const getQuestionAndAnswer = () => {
 
 const description = 'What is the result of the expression?';
 
-const calc = () => startGame(getQuestionAndAnswer, description);
+const runCalcGame = () => startGame(getQuestionAndAnswer, description);
 
-export default calc;
+export default runCalcGame;
