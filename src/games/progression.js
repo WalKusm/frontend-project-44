@@ -13,7 +13,7 @@ const getQuestionAndAnswer = () => {
     j += 1;
   }
 
-  const randNum = Math.abs((Math.random() * 10).toFixed(0));
+  const randNum = Math.abs((Math.random() * 10).toFixed(0) - 1);
   answ = questArray[randNum];
   questArray[randNum] = '..';
 
