@@ -1,5 +1,5 @@
 import startGame from '../index.js';
-import { getRandomTwodigitCount } from '../random-count.js';
+import getRandomNumber from '../random-number.js';
 
 const operatorArray = ['+', '-', '*'];
 
@@ -18,8 +18,8 @@ const getCalculation = (count1, count2, operator) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const count1 = getRandomTwodigitCount();
-  const count2 = getRandomTwodigitCount();
+  const count1 = getRandomNumber(100);
+  const count2 = getRandomNumber(100);
   const operator = operatorArray[Math.floor(Math.random() * 3)];
   const question = `${count1} ${operator} ${count2}`;
   const answer = getCalculation(count1, count2, operator);

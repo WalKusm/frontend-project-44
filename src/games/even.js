@@ -1,5 +1,5 @@
 import startGame from '../index.js';
-import { getRandomTwodigitCount } from '../random-count.js';
+import getRandomNumber from '../random-number.js';
 
 const checkForEvenness = (question) => {
   let answ = 0;
@@ -13,7 +13,7 @@ const checkForEvenness = (question) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const question = getRandomTwodigitCount();
+  const question = getRandomNumber(100);
   const answer = checkForEvenness(question);
   return [question, answer];
 };

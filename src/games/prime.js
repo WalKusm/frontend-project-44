@@ -1,5 +1,5 @@
 import startGame from '../index.js';
-import { getRandomTwodigitCount } from '../random-count.js';
+import getRandomNumber from '../random-number.js';
 
 const checkPrimeNumber = (question) => {
   let answ = 0;
@@ -20,7 +20,7 @@ const checkPrimeNumber = (question) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const question = Math.abs(getRandomTwodigitCount());
+  const question = Math.abs(getRandomNumber(100));
   const answer = checkPrimeNumber(question);
   return [question, answer];
 };
