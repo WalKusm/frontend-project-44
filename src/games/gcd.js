@@ -10,15 +10,15 @@ const getGcd = (count1, count2) => {
     }
     divisor += 1;
   }
-  return (String(answ));
+  return answ;
 };
 
 const getQuestionAndAnswer = () => {
-  const count1 = Math.abs(getRandomNumber(100));
-  const count2 = Math.abs(getRandomNumber(100));
+  const count1 = getRandomNumber(100);
+  const count2 = getRandomNumber(100);
 
   const question = `${count1} ${count2}`;
-  const answer = getGcd(count1, count2);
+  const answer = String(getGcd(count1, count2));
 
   return [question, answer];
 };
