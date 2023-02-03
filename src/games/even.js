@@ -1,16 +1,7 @@
 import startGame from '../index.js';
 import getRandomNumber from '../random-number.js';
 
-const isNumberEven = (question) => {
-  let answ = 0;
-  if (question % 2 === 0) {
-    answ = 'yes';
-  }
-  if (question % 2 !== 0) {
-    answ = 'no';
-  }
-  return answ;
-};
+const isNumberEven = (question) => (question % 2 === 0 ? 'yes' : 'no');
 
 const getQuestionAndAnswer = () => {
   const question = getRandomNumber(100);
