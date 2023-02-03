@@ -15,10 +15,9 @@ const generateProgression = (startCount, stepOfProgression) => {
 const getQuestionAndAnswer = () => {
   const stepOfProgression = Math.abs(getRandomNumber(10));
   const startCount = Math.abs(getRandomNumber(100));
-  let answ = 0;
   const progression = generateProgression(startCount, stepOfProgression);
   const randNum = Math.abs(getRandomNumber(10) - 1);
-  answ = progression[randNum];
+  const answ = progression[randNum];
   progression[randNum] = '..';
 
   const question = progression.join(' ');
