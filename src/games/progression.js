@@ -6,15 +6,15 @@ const generateProgression = (startCount, stepOfProgression) => {
   questArray[0] = startCount;
   let j = 1;
   while (j < 10) {
-    questArray[j] = Number(questArray[j - 1]) + Number(stepOfProgression);
+    questArray[j] = questArray[j - 1] + stepOfProgression;
     j += 1;
   }
   return questArray;
 };
 
 const getQuestionAndAnswer = () => {
-  const stepOfProgression = getRandomNumber(10);
-  const startCount = getRandomNumber(100);
+  const stepOfProgression = Math.abs(getRandomNumber(10));
+  const startCount = Math.abs(getRandomNumber(100));
   const progression = generateProgression(startCount, stepOfProgression);
   const randNum = getRandomNumber(10) - 1;
   const answ = progression[randNum];
