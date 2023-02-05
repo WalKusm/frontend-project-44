@@ -6,17 +6,17 @@ const generateProgression = (startCount, stepOfProgression) => {
   questArray[0] = startCount;
   let j = 1;
   while (j < 10) {
-    questArray[j] = questArray[j - 1] + stepOfProgression;
+    questArray[j] = Number(questArray[j - 1]) + Number(stepOfProgression);
     j += 1;
   }
   return questArray;
 };
 
 const getQuestionAndAnswer = () => {
-  const stepOfProgression = Math.abs(getRandomNumber(10));
-  const startCount = Math.abs(getRandomNumber(100));
+  const stepOfProgression = getRandomNumber(10);
+  const startCount = getRandomNumber(100);
   const progression = generateProgression(startCount, stepOfProgression);
-  const randNum = Math.abs(getRandomNumber(10) - 1);
+  const randNum = getRandomNumber(10) - 1;
   const answ = progression[randNum];
   progression[randNum] = '..';
 
