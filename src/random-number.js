@@ -1,3 +1,3 @@
-const getRandomNumber = (digit) => (Math.random() * digit).toFixed(0);
+const getRandomNumber = (upperRangeLimit) => (Math.random() * upperRangeLimit).toFixed(0);
 
 export default getRandomNumber;

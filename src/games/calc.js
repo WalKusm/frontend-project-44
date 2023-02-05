@@ -2,6 +2,7 @@ import startGame from '../index.js';
 import getRandomNumber from '../random-number.js';
 
 const operatorArray = ['+', '-', '*'];
+const twoDigitNumber = 100;
 
 const getCalculation = (count1, count2, operator) => {
   switch (operator) {
@@ -17,8 +18,8 @@ const getCalculation = (count1, count2, operator) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const count1 = getRandomNumber(100);
-  const count2 = getRandomNumber(100);
+  const count1 = getRandomNumber(twoDigitNumber);
+  const count2 = getRandomNumber(twoDigitNumber);
   const operator = operatorArray[getRandomNumber(operatorArray.length - 1)];
   const question = `${count1} ${operator} ${count2}`;
   const answer = String(getCalculation(count1, count2, operator));

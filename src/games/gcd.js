@@ -1,6 +1,8 @@
 import startGame from '../index.js';
 import getRandomNumber from '../random-number.js';
 
+const twoDigitNumber = 100;
+
 const getGcd = (count1, count2) => {
   let divisor = 1;
   let answ = 1;
@@ -14,8 +16,8 @@ const getGcd = (count1, count2) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const count1 = getRandomNumber(100);
-  const count2 = getRandomNumber(100);
+  const count1 = getRandomNumber(twoDigitNumber);
+  const count2 = getRandomNumber(twoDigitNumber);
 
   const question = `${count1} ${count2}`;
   const answer = String(getGcd(count1, count2));
