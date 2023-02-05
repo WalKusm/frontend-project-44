@@ -16,10 +16,10 @@ const generateProgression = (startCount, stepOfProgression) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const stepOfProgression = Math.abs(getRandomNumber(oneDigitNumber));
-  const startCount = Math.abs(getRandomNumber(twoDigitNumber));
+  const stepOfProgression = Number(getRandomNumber(oneDigitNumber));
+  const startCount = Number(getRandomNumber(twoDigitNumber));
   const progression = generateProgression(startCount, stepOfProgression);
-  const randNum = getRandomNumber(oneDigitNumber) - 1;
+  const randNum = Math.abs(getRandomNumber(oneDigitNumber - 1));
   const answ = progression[randNum];
   progression[randNum] = '..';
 

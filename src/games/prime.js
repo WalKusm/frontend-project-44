@@ -19,7 +19,7 @@ const isNumberPrime = (question) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const question = Math.abs(getRandomNumber(twoDigitNumber));
+  const question = Number(getRandomNumber(twoDigitNumber));
   const answer = (quest) => (isNumberPrime(quest) ? 'yes' : 'no');
   return [question, answer(question)];
 };
