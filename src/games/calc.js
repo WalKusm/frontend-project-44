@@ -12,7 +12,7 @@ const getCalculation = (count1, count2, operator) => {
     case '*':
       return Number(count1) * Number(count2);
     default:
-      return false;
+      throw Error;
   }
 };
 
