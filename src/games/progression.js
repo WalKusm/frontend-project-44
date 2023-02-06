@@ -16,8 +16,8 @@ const generateProgression = (startCount, stepOfProgression) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const stepOfProgression = Number(getRandomNumber(oneDigitNumber));
-  const startCount = Number(getRandomNumber(twoDigitNumber));
+  const stepOfProgression = getRandomNumber(oneDigitNumber);
+  const startCount = getRandomNumber(twoDigitNumber);
   const progression = generateProgression(startCount, stepOfProgression);
   const randNum = Math.abs(getRandomNumber(oneDigitNumber - 1));
   const answer = String(progression[randNum]);
