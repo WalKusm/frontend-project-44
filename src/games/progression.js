@@ -20,11 +20,10 @@ const getQuestionAndAnswer = () => {
   const startCount = Number(getRandomNumber(twoDigitNumber));
   const progression = generateProgression(startCount, stepOfProgression);
   const randNum = Math.abs(getRandomNumber(oneDigitNumber - 1));
-  const answ = progression[randNum];
+  const answer = String(progression[randNum]);
   progression[randNum] = '..';
 
   const question = progression.join(' ');
-  const answer = String(answ);
 
   return [question, answer];
 };

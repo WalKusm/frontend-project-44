@@ -13,7 +13,7 @@ const getCalculation = (count1, count2, operator) => {
     case '*':
       return Number(count1) * Number(count2);
     default:
-      throw Error;
+      throw Error('unknown operation');
   }
 };
 

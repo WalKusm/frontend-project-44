@@ -19,9 +19,11 @@ const isNumberPrime = (question) => {
 };
 
 const getQuestionAndAnswer = () => {
+  const answ = (quest) => (isNumberPrime(quest) ? 'yes' : 'no');
+
   const question = Number(getRandomNumber(twoDigitNumber));
-  const answer = (quest) => (isNumberPrime(quest) ? 'yes' : 'no');
-  return [question, answer(question)];
+  const answer = answ(question);
+  return [question, answer];
 };
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
